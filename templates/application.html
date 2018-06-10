@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Olympic 2018</title>
+</head>
+<body ><center>
+<img src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2018/02/winter-olympics-nbc.jpg" alt="Photograph winter olympic." width="400" height="250">
+<h1> Select any value from the below list to get sorted Medal data for Winter Olympic 2018</h1>
+<form action="/output">
+<select name=options>
+    {% for list in catagory %}
+    <option value= "{{list}}" SELECTED>{{list}}</option>"
+    {% endfor %}
+</select>
+<input type="submit" name="submit" value = "Submit">
+</form>
+<form action="/get_image">
+<h2> To View the  multi-line graph to display the Medal data. Click below</h2>
+<input type="submit" name="Show Multi line graph" value = "Show Multi line graph">
+</form><br><br>
+<h2> To read more about Winter olympic 2018 vist the below URL <br></h2>
+<a href="https://en.wikipedia.org/wiki/2018_Winter_Olympics_medal_table">2018 Winter Olympics</a>
+</center>
+</body>
+</html>
